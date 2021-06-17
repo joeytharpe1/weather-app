@@ -1,19 +1,37 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: lightseagreen ;
-    background-image: url('https://source.unsplash.com/1600x900/?cloud');
-    font-size: 120%;
-    animation: iconanimation 6s;
+  margin: 0;
+  font-size: 120%;
+  /* animation: iconanimation 6s; */
 }
 
-@keyframes iconanimation{
-    from{
-        transform: scale(0.5,0.5);
-    }to{
-        transform: scale(1,1)
-    }
+.container-bg {
+  height: 100vh;
+  width: 100%;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /*
+  background-color: lightseagreen;
+  background-image: url("https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  */
+}
+
+@keyframes iconanimation {
+  from {
+    transform: scale(0.5, 0.5);
+  }
+  to {
+    transform: scale(1, 1);
+  }
 }

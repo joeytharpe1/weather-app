@@ -1,0 +1,75 @@
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* button element */
+button:hover {
+    background: lightblue;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 2.5em;
+    width: 2.5em;
+    background:#7c7c7c;
+    color: white;
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+}
+
+/* input element */
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background:#7c7c7c;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+}
+input.search-bar:hover {
+    background: lightblue;
+}
+
+/* h1 */
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+/* description */
+
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* img */
+img{
+    animation: iconanimation 3s infinite;
+}
+
+/* loader */
+
+.loader-container{
+    margin: 15%;
+}
+@keyframes iconanimation{
+    from{
+        transform: scale(0.5,0.5);
+    }to{
+        transform: scale(1,1)
+    }
+}

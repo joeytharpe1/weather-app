@@ -1,10 +1,10 @@
-import { getWeatherData } from './WeatherData';
 import { useState, useEffect } from 'react';
 import { Card } from 'react-bootstrap';
-
 import { ScaleLoader } from 'react-spinners';
 import { BsSearch } from 'react-icons/bs';
 import Pulse from 'react-reveal/Pulse';
+
+import { getWeatherData} from './WeatherData';
 
 import './weather.css';
 
@@ -33,7 +33,9 @@ const WeatherCard = () => {
     `;
 
     useEffect(() => {
+        
         getData();
+        // eslint-disable-next-line 
     }, []);
 
     const cardStyle = {
